@@ -12,7 +12,7 @@ def test_dist():
 
 def test_dist_points():
     _points = [(0,0),(1,1), (2,2), (3,3), (4,4), (5,5)]
-    _min_expected =  1.4142135623730951
+    _min_expected =  1.4142
 
     result, _dist_points = dist_points(_points)
-    assert _min_expected == result
+    assert _min_expected == round(result,4)
